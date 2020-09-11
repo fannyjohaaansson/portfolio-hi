@@ -6,9 +6,6 @@ body {
 
 header {
     background-image:url(photos/Background/samuel-scrimshaw-JXANugsHjCg-unsplash.jpg) ;
-
-    /*background-image:url(photos/Background/marian-kroell-eHxgoN1VuFc-unsplash.jpg) ;
-   */
     height: 650px;
     background-position: center; 
     background-repeat: no-repeat; 
@@ -30,6 +27,9 @@ header h1 {
     
 }
 
+.foot li a:hover {
+    
+}
 
 ul {
     list-style-type: none;
@@ -37,7 +37,7 @@ ul {
     padding: 0;
     padding-left: 10px;  
     overflow: hidden;
-    background-color:#eae0c8;
+    background-color:#dfd0ab;
     
   }
   
@@ -60,6 +60,7 @@ ul {
 
   .nav li a:hover {
     background-color: #d8c894;
+    transition: all 0.3s;
   }
 
   .name {
@@ -84,6 +85,32 @@ ul {
     box-sizing: border-box;
   }
   
+  .about-me-box {
+    margin-top:1.5em;
+    width: 100%;
+    padding: 3em;
+    background-color: #dfd0ab;
+}
+
+.about-me {
+    Width: 50%; 
+    text-align: center;
+    margin: 0 auto; 
+    color: white;
+}
+
+.about-me h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 22px; 
+}
+
+.about-me p {
+    font-family: 'Poppins', sans-serif;
+    text
+
+}
+
   body {
     background-color: #f1f1f1;
     padding: 20px;
@@ -104,6 +131,15 @@ ul {
     font-weight: 400; 
     color: white;
     word-break: break-all;
+  }
+
+  .contentimg {
+    border-style:solid;
+    border-width:10px ;
+    border-color:#dfd0ab ;
+    margin-top:-70px ;
+    margin-bottom:120px ;
+
   }
   
   .row {
@@ -131,6 +167,13 @@ ul {
     width: 50%;
     
   }
+
+  .column-1 p {
+    font-family: 'Poppins', sans-serif;
+    width: 80%;
+    text-align: justify;
+
+  }
   
   /* Clear floats after rows */ 
   .row:after {
@@ -140,7 +183,7 @@ ul {
   }
   
   .content {
-    background-color: #eae0c8;
+    background-color: #dfd0ab;
     padding: 10px;
     height: 480px;
   }
@@ -153,7 +196,7 @@ ul {
   }
   
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 600px) {        
     .column, .column-1 {
       width: 100%;
     }
@@ -166,7 +209,7 @@ ul {
 
   .subpage {
     font-family: 'Poppins', sans-serif;
-    color:#eae0c8;
+    color:#dfd0ab;
     text-transform: uppercase;
     text-shadow: 2px 2px grey;
   
@@ -174,6 +217,14 @@ ul {
 
 
      
-      .bonnier {
-padding-bottom:9px;
-      }
+    .bonnier {
+        padding-bottom:9px;
+    }
+
+    .grow { 
+        transition: all .2s ease-in-out; 
+        }
+        
+    .grow:hover { 
+        transform: scale(1.1); 
+        }

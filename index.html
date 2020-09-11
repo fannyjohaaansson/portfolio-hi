@@ -13,9 +13,9 @@
     <ul class="nav">
       <li><a href="index.html">Fanny Johansson</a></li>
       <li><a href="Masterthesis.html">Master Thesis</a></li>
-      <li><a href="#">School Projects</a></li>
       <li><a href="Photography.html">Photography</a></li>
       <li><a href="Work.html">Work</a></li>
+      <li><a href="Aboutme.html">About me</a></li>
     </ul>
   </nav>
   <header>
@@ -23,23 +23,23 @@
       <h1 class="name">Fanny Johansson </h1>
       <h2 class="welcome">Welcome to my portfolio </h2> 
   </header> 
+  <div class="about-me-box">
+    <div class="about-me">
+<h3>About Me</h3>
+<p> Hi! My name is Fanny Johansson and I am a graphic designer from Sweden. I’m currently studying front end developer at hyper island in Stockholm. I love to photograph and edit pictures on my free time.     
+</p>
+  </div>
+  </div>
   <!-- Portfolio Gallery Grid -->
 <div class="row">
-  <div class="column">
+  <div class="column grow">
     <div onclick="location.href='masterthesis.html';" style="cursor: pointer;" class="content">
       <img src="Photos/Master thesis/recept_tomatpasta_markning.jpg" alt="Mountains" style="width:100%">
       <h3>Master thesis</h3>
       <!-- <p>Lorem ipsum..</p> -->
     </div>
   </div>
-  <div class="column">
-    <div onclick="location.href='#';" style="cursor: pointer;" class="content">
-      <img src="Photos/Garlic/Redigerade-02.tif" alt="Lights" style="width:100%">
-      <h3>School projects</h3>
-      <!-- <p>Lorem ipsum..</p> -->
-    </div>
-  </div>
-  <div class="column">
+  <div class="column grow">
     <div onclick="location.href='photography.html';" style="cursor: pointer;" class="content">
       <img src="Photos/Photography/IMG_2821.jpg" alt="Nature" style="width:100%">
       <h3>Photography</h3>
@@ -47,15 +47,21 @@
     </div>
     </div>
     <div onclick="location.href='work.html';" style="cursor: pointer;" class="column">
-    <div class="content">
+    <div class="content grow">
       <img class="bonnier"src="Photos/Bonnier News Local/Skärmklipp-2.PNG" alt="Mountains" style="width:100%">
       <img src="Photos/Bonnier News Local/Skärmklipp.3.PNG" alt="Mountains" style="width:100%">
       <h3>Work</h3>
       <!-- <p>Lorem ipsum..</p> -->
     </div>
   </div>
+  <div class="column grow">
+    <div onclick="location.href='Aboutme.html';" style="cursor: pointer;" class="content">
+      <img src="Photos/About me/Skärmavbild 2020-09-10 kl. 20.27.06.png" alt="Lights" style="width:100%">
+      <h3>About me</h3>
+      <!-- <p>Lorem ipsum..</p> -->
+    </div>
+  </div>
 </div>
-
 
 <!-- END MAIN -->
 </div>
@@ -63,11 +69,12 @@
 <!-- Footer -->
 <footer class="footer">
   <ul class="foot">
+    <li><a href="Aboutme.html">About me</a></li>
     <li><a href="Work.html">Work</a></li>
     <li><a href="Photography.html">Photography </a></li>
-    <li><a href="#">School Projects</a></li>
     <li><a href="Masterthesis.html">Master Thesis</a></li>
     <li><a href="index.html">Fanny Johansson</a></li>
+    
   </ul>
 </footer>
   
