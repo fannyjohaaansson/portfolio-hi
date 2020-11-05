@@ -1,230 +1,296 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-bg-color: #dfd0ab;
+  --main-font-color: #ffffff;
+
+  /* Color scheme */
+  --primary-color: #cb997e;
+  --primary-color-light: #ddbea9;
+  --primary-color-super-light: #eddcd2;
+  --secondary-color: #a5a58d;
+  --secondary-color-light: #b7b7a4;
+  --secondary-color-super-light: #f0efeb;
+}
+
 body {
-    width: 1200px ; 
-    max-width:100%;
-    margin: auto;
-}   
+  display: grid;
+  grid-template: repeat(10, 1fr) / repeat(10, 1fr);
+  height: 100vh;
+  width: 100vw;
+}
+
+.hamburger-icon {
+  background-image: url(/menu.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 2rem;
+  width: 2rem;
+  display: block;
+}
+
+.navbar-toggle {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 24px;
+  z-index: 3;
+  display: none;
+}
+
+.navbar {
+  grid-column: 1 / 11;
+  grid-row: 1 / 2;
+  background-color: var(--main-bg-color);
+  /* height: 3rem; */
+}
 
 header {
-    background-image:url(photos/Background/samuel-scrimshaw-JXANugsHjCg-unsplash.jpg) ;
-    height: 650px;
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-size: cover;
-    text-align: center;
-    color: white;
-    padding: 180px;
+  background-image: url(photos/Background/samuel-scrimshaw-JXANugsHjCg-unsplash.jpg);
+  height: 650px;
+  grid-column: 1 / 11;
+  grid-row: 2 / 3;
+  background-position: center;
+  background-color: var(--main-bg-color);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: var(--main-font-color);
+  padding-top: 14rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 header h1 {
-    font-size: 68px;
-    font-weight: 600;
-    text-transform: uppercase;
+  font-size: 68px;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .footer li {
-    float: right;
-    font-size: 12px;
-    
-}
-
-.foot li a:hover {
-    
+  float: right;
+  font-size: 12px;
 }
 
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    padding-left: 10px;  
-    overflow: hidden;
-    background-color:#dfd0ab;
-    
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    text-transform: uppercase ;
-    
-  }
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-left: 10px;
+  overflow: hidden;
+  background-color: var(--main-bg-color);
+}
 
-  .nav li a:hover {
-    background-color: #d8c894;
-    transition: all 0.3s;
-  }
+li {
+  float: left;
+}
 
-  .name {
-    font-family: 'Poppins', sans-serif; 
+li a {
+  display: block;
+  color: var(--main-font-color);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
 
-    text-decoration: line-through;
+.nav li a:hover {
+  background-color: #d8c894;
+  transition: all 0.3s;
+}
 
-  }
-   /* img {
+.name {
+  font-family: "Poppins", sans-serif;
 
-    width: 49.5%;
-    margin-top: 4px;
-    display: inline-block;
-  } */
-  .welcome {
-      font-family: 'Poppins', sans-serif;
-      font-size:24px ;
-      font-weight: 400; 
-  }
+  text-decoration: line-through;
+}
 
-  * {
-    box-sizing: border-box;
-  }
-  
-  .about-me-box {
-    margin-top:1.5em;
-    width: 100%;
-    padding: 3em;
-    background-color: #dfd0ab;
+.welcome {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.about-me-box {
+  margin-top: 1.5em;
+  padding: 3em;
+  background-color: var(--main-bg-color);
+  grid-column: 1 / 11;
+  grid-row: 3 / 4;
 }
 
 .about-me {
-    Width: 50%; 
-    text-align: center;
-    margin: 0 auto; 
-    color: white;
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+  color: var(--main-font-color);
 }
 
 .about-me h3 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    font-size: 22px; 
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
 }
 
 .about-me p {
-    font-family: 'Poppins', sans-serif;
-    text
-
+  font-family: "Poppins", sans-serif;
 }
 
-  body {
-    background-color: #f1f1f1;
-    padding: 20px;
-    font-family: Arial;
-  }
-  
-   .content h3 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 22px;
-    font-weight: 600; 
-    color: white;
-    word-break: break-all;
-  }
+.content h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--main-font-color);
+  word-break: break-all;
+}
 
-  .content p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    font-weight: 400; 
-    color: white;
-    word-break: break-all;
-  }
+.content p {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  word-break: break-all;
+}
 
-  .contentimg {
-    border-style:solid;
-    border-width:10px ;
-    border-color:#dfd0ab ;
-    margin-top:-70px ;
-    margin-bottom:120px ;
+.contentimg {
+  border-style: solid;
+  border-width: 10px;
+  border-color: #dfd0ab;
+  margin-top: -70px;
+  margin-bottom: 120px;
+}
 
-  }
-  
-  .row {
-    margin: 8px -16px;
-  }
-  
-  /* Add padding BETWEEN each column (if you want) */
-  .row,
-  .row > .column {
-    padding: 8px;
-  }
+.row {
+  grid-column: 1 / 11;
+  grid-row: 4 / 5;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
 .row > .column-1 {
-        padding: 8px;
-  }
-  
-  /* Create four equal columns that floats next to each other */
-  .column {
-    float: left;
-    width: 25%;
-    
-  }
-   
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+.column-1 {
+  float: left;
+  width: 50%;
+}
+
+.column-1 p {
+  font-family: "Poppins", sans-serif;
+  width: 80%;
+  text-align: justify;
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.content {
+  background-color: var(--main-bg-color);
+  padding: 10px;
+  height: 34rem;
+  /* height: 550px; */
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column,
   .column-1 {
-    float: left;
     width: 50%;
-    
   }
 
-  .column-1 p {
-    font-family: 'Poppins', sans-serif;
-    width: 80%;
-    text-align: justify;
+  .about-me-box {
+    grid-column: 1 / 11;
+  }
+}
 
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column,
+  .column-1 {
+    width: 100%;
   }
-  
-  /* Clear floats after rows */ 
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  .content {
-    background-color: #dfd0ab;
-    padding: 10px;
-    height: 480px;
-  }
-  
-  /* Responsive layout - makes a two column-layout instead of four columns */
-  @media screen and (max-width: 900px) {
-    .column, .column-1 {
-      width: 50%;
-    }
-  }
-  
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {        
-    .column, .column-1 {
-      width: 100%;
-    }
-    li, li a {
-    Width: 100%; 
-    display:block;
+
+  li,
+  li a {
+    width: 100%;
+    display: block;
     float: left;
-    }
   }
 
-  .subpage {
-    font-family: 'Poppins', sans-serif;
-    color:#dfd0ab;
-    text-transform: uppercase;
-    text-shadow: 2px 2px grey;
-  
+  .navbar-toggle {
+    display: block;
+  }
+  .nav {
+    list-style-type: none;
+    display: none;
+  }
+}
+
+.active {
+  display: block;
+}
+@media screen and (max-width: 400px) {
+  header h1 {
+    font-size: 3rem;
+  }
+  .about-me {
+    width: 100%;
   }
 
+  .about-me h3 {
+    font-size: 1.8rem;
+  }
 
-     
-    .bonnier {
-        padding-bottom:9px;
-    }
+  .about-me p {
+    font-size: 1.2rem;
+  }
+}
 
-    .grow { 
-        transition: all .2s ease-in-out; 
-        }
-        
-    .grow:hover { 
-        transform: scale(1.1); 
-        }
+.subpage {
+  font-family: "Poppins", sans-serif;
+  color: #dfd0ab;
+  text-transform: uppercase;
+  text-shadow: 2px 2px grey;
+}
+
+.bonnier {
+  padding-bottom: 9px;
+}
+
+.grow {
+  transition: all 0.2s ease-in-out;
+  box-sizing: border-box;
+}
+
+.grow:hover {
+  transform: scale(1.1);
+}
+
+.footer {
+  grid-column: 1 / 11;
+  grid-row: 6/ 7;
+}

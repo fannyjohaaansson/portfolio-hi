@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
     <title>Fanny Johansson</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
   <!-- Navigation bar -->
-  <nav class="navbar">
-    <ul class="nav">
+  <nav class="navbar" >
+    
+    <ul class="nav" id="js-menu">
       <li><a href="index.html">Fanny Johansson</a></li>
       <li><a href="Masterthesis.html">Master Thesis</a></li>
       <li><a href="Photography.html">Photography</a></li>
@@ -18,6 +20,10 @@
       <li><a href="Aboutme.html">About me</a></li>
     </ul>
   </nav>
+    <span class="navbar-toggle" id="js-navbar-toggle">
+      <i class="hamburger-icon"></i>
+  </span>
+  
   <header>
 
       <h1 class="name">Fanny Johansson </h1>
@@ -36,27 +42,24 @@
     <div onclick="location.href='masterthesis.html';" style="cursor: pointer;" class="content">
       <img src="Photos/Master thesis/recept_tomatpasta_markning.jpg" alt="Mountains" style="width:100%">
       <h3>Master thesis</h3>
-      <!-- <p>Lorem ipsum..</p> -->
     </div>
   </div>
   <div class="column grow">
     <div onclick="location.href='photography.html';" style="cursor: pointer;" class="content">
       <img src="Photos/Photography/IMG_2821.jpg" alt="Nature" style="width:100%">
       <h3>Photography</h3>
-      <!-- <p>Lorem ipsum..</p> -->
     </div>
     </div>
-    <div onclick="location.href='work.html';" style="cursor: pointer;" class="column">
-    <div class="content grow">
-      <img class="bonnier"src="Photos/Bonnier News Local/Skärmklipp-2.PNG" alt="Mountains" style="width:100%">
-      <img src="Photos/Bonnier News Local/Skärmklipp.3.PNG" alt="Mountains" style="width:100%">
-      <h3>Work</h3>
-      <!-- <p>Lorem ipsum..</p> -->
-    </div>
-  </div>
+    <div class="column grow">
+      <div onclick="location.href='work.html';" style="cursor: pointer;" class="content">
+        <img class="bonnier"src="Photos/Bonnier News Local/Skärmklipp-2.PNG" alt="Mountains" style="width:100%">
+    <img src="Photos/Bonnier News Local/Skärmklipp.3.PNG" alt="Mountains" style="width:100%">
+        <h3>Work</h3>
+      </div>
+      </div>
   <div class="column grow">
     <div onclick="location.href='Aboutme.html';" style="cursor: pointer;" class="content">
-      <img src="Photos/About me/Skärmavbild 2020-09-10 kl. 20.27.06.png" alt="Lights" style="width:100%">
+      <img src="/Skärmavbild 2020-09-10 kl. 20.27.06.png" alt="Lights" style="width:100%">
       <h3>About me</h3>
       <!-- <p>Lorem ipsum..</p> -->
     </div>
@@ -77,15 +80,8 @@
     
   </ul>
 </footer>
-  
-  
-  <!--   
-  <div class="pictures">
-    <img  src="Photos/Book/Fram_3.jpg">
-    <img  src="Photos/Master thesis/Liggande_helhet_liten.jpg">
-    <img  src="Photos/Garlic/Redigerade-02.tif">
-  </div>
--->
 
+
+<script src="/Script.js"></script>
 </body>
 </html>
