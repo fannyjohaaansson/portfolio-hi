@@ -8,7 +8,7 @@
   --main-bg-color: #dfd0ab;
   --main-font-color: #ffffff;
 
-  /* Color scheme */
+  /* Color scheme  */
   --primary-color: #cb997e;
   --primary-color-light: #ddbea9;
   --primary-color-super-light: #eddcd2;
@@ -31,8 +31,8 @@ body {
   background-size: cover;
   height: 2rem;
   width: 2rem;
+
   display: block;
-  /* z-index: 10; */
 }
 
 .navbar-toggle {
@@ -50,7 +50,6 @@ body {
   grid-column: 1 / 11;
   grid-row: 1 / 2;
   background-color: var(--main-bg-color);
-  /* height: 3rem; */
 }
 
 .active {
@@ -69,8 +68,8 @@ header {
   text-align: center;
   color: var(--main-font-color);
   padding-top: 14rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 header h1 {
@@ -116,7 +115,6 @@ li a {
 
 .name {
   font-family: "Poppins", sans-serif;
-
   text-decoration: line-through;
 }
 
@@ -180,7 +178,6 @@ li a {
   grid-row: 4 / 5;
 }
 
-/* Add padding BETWEEN each column (if you want) */
 .row,
 .row > .column {
   padding: 8px;
@@ -189,7 +186,6 @@ li a {
   padding: 8px;
 }
 
-/* Create four equal columns that floats next to each other */
 .column {
   float: left;
   width: 25%;
@@ -206,7 +202,6 @@ li a {
   text-align: justify;
 }
 
-/* Clear floats after rows */
 .row:after {
   content: "";
   display: table;
@@ -217,10 +212,38 @@ li a {
   background-color: var(--main-bg-color);
   padding: 10px;
   height: 34rem;
-  /* height: 550px; */
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
+.subpage {
+  font-family: "Poppins", sans-serif;
+  color: #dfd0ab;
+  text-transform: uppercase;
+  text-shadow: 2px 2px grey;
+  grid-column: 1 / 11;
+  grid-row: 2 / 3;
+  padding-top: 1rem;
+  padding-left: 0.7rem;
+}
+
+.bonnier {
+  padding-bottom: 9px;
+}
+
+.grow {
+  transition: all 0.2s ease-in-out;
+  box-sizing: border-box;
+}
+
+.grow:hover {
+  transform: scale(1.1);
+}
+
+.footer {
+  grid-column: 1 / 11;
+  grid-row: 6/ 7;
+}
+
+/* Responsive layout  */
 @media screen and (max-width: 900px) {
   .column,
   .column-1 {
@@ -232,8 +255,7 @@ li a {
   }
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 720px) {
   .column,
   .column-1 {
     width: 100%;
@@ -253,11 +275,11 @@ li a {
     list-style-type: none;
     display: none;
   }
+  .active {
+    display: block;
+  }
 }
 
-.active {
-  display: block;
-}
 @media screen and (max-width: 400px) {
   header h1 {
     font-size: 3rem;
@@ -281,29 +303,4 @@ li a {
     list-style-type: none;
     display: none;
   }
-}
-
-.subpage {
-  font-family: "Poppins", sans-serif;
-  color: #dfd0ab;
-  text-transform: uppercase;
-  text-shadow: 2px 2px grey;
-}
-
-.bonnier {
-  padding-bottom: 9px;
-}
-
-.grow {
-  transition: all 0.2s ease-in-out;
-  box-sizing: border-box;
-}
-
-.grow:hover {
-  transform: scale(1.1);
-}
-
-.footer {
-  grid-column: 1 / 11;
-  grid-row: 6/ 7;
 }
